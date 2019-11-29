@@ -1,5 +1,7 @@
 package homework3;
 
+// Программа должна определить, является ли последовательность палиндромом.
+
 import java.util.Scanner;
 
 public class Exercise1 {
@@ -8,7 +10,6 @@ public class Exercise1 {
         System.out.print("Type string: ");
         String string = in.nextLine();
         char[] chars = string.toCharArray();
-        in.close();
         char[] array1 = new char[chars.length];
         char[] array2 = new char[chars.length];
         boolean a = true;

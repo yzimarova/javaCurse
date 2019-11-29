@@ -1,12 +1,11 @@
 package homework2;
 import java.util.Scanner;
-
+// Напишите программу, в которой задаются данные(строки): имя, фамилия и отчество и  выводящую эти  данные
 public class Exercise1 {
     public static void main(String arg[]) {
         Scanner in = new Scanner(System.in);
         System.out.print("ФИО: ");
         String name = in.nextLine();
-        in.close();
         String course = "Курс: Java core";
         String student = "Студент";
         drawStars(getLength(name));
@@ -22,7 +21,7 @@ public class Exercise1 {
     }
 
     public static void drawStars(int length) {
-        for(int i = 1; i <= length+4; i++){
+        for(int i = 1; i <= length + 4; i++){
             System.out.print("*");
         }
         System.out.println();

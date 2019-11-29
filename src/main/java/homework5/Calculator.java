@@ -25,7 +25,5 @@ public class Calculator extends Factory {
         in.close();
         double result = calculator.calculate(parser.getLeftOperand(parser.makeParse(sentence)), parser.getRightOperand(parser.makeParse(sentence)), parser.getOperator(parser.makeParse(sentence)));
         System.out.println(result);
-//        System.out.println( calculator.calculate(456.546, 545.5465, "*") );
-//        System.out.println( calculator.calculate(456.546, 545.5465, "-") );
     }
 }

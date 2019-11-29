@@ -1,5 +1,7 @@
 package homework3;
 
+// Программа заполняет массив случайными числами. Выводит массив и все числа массива кратные 3-ем.
+
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -9,9 +11,7 @@ public class Exercise3 {
         Scanner in = new Scanner(System.in);
         System.out.print("Choose length of array (from 10 to 100): ");
         int length = in.nextInt();
-        in.close();
         validate(length);
-
     }
 
     public static void validate(int length) {
@@ -28,6 +28,12 @@ public class Exercise3 {
         for (int i = 0; i < length; i++) {
             randomArray[i] = ThreadLocalRandom.current().nextInt(Integer.MAX_VALUE);
             System.out.print(randomArray[i] + " ");
+        }
+        System.out.print("\n Digit by three: ");
+        for (int y = 0; y < length; y++) {
+            if ((randomArray[y] % 3) == 0) {
+                System.out.print(randomArray[y] + " ");
+            }
         }
     }
 }

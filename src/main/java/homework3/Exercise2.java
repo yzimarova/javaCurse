@@ -1,5 +1,7 @@
 package homework3;
 
+// Программа разбивает строку на слова, и “переворачивает” каждое слово
+
 import java.util.Scanner;
 
 public class Exercise2 {
@@ -7,7 +9,6 @@ public class Exercise2 {
         Scanner in = new Scanner(System.in);
         System.out.println("Type a sentence: ");
         String sentence = in.nextLine();
-        in.close();
         upendWords(splitSentence(sentence));
     }
 

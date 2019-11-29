@@ -1,6 +1,11 @@
 package homework5;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Factory {
+
+    private Map<String, BinaryOperation> operationMap;
 
     public BinaryOperation getOperationFor(String operator) {
         if ("*".equals(operator)) {
