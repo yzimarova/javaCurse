@@ -34,7 +34,7 @@ public class Triangle {
     }
 
     public double getSquare(){
-        float p = (ab + bc + ac)/2;
+        float p = getPerimeter()/2;
         return Math.sqrt(p * (p - ab) * (p - bc) * (p - ac));
     }
 
