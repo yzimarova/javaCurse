@@ -1,7 +1,6 @@
 package homework4;
 
 import java.math.BigDecimal;
-
 import static java.lang.Math.*;
 
 public class Triangle {
