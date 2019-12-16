@@ -15,11 +15,6 @@ public class TextFinder {
         String text = args[1];
 
         File file = new File(path);
-//        if (!file.exists() || !file.isFile()) {
-//            System.out.println("You can not open this file " + path);
-//            throw new IllegalArgumentException("File is not exist or you don't have access to this file");
-//        }
-
         Scanner scanner = null;
         try {
             scanner = new Scanner(file, "UTF-8");
